@@ -1,0 +1,36 @@
+@prefix-cls: ~'@{namespace}-default-layout';
+@sider-prefix-cls: ~'@{namespace}-layout-sider';
+@menu-prefix-cls: ~'@{namespace}-layout-menu';
+
+// html[data-theme='dark'] {
+//   .@{prefix-cls}{
+//     .@{sider-prefix-cls} {
+//       font-size: 22px;
+//       background-color: @sider-bg-color;
+//       .@{menu-prefix-cls} {
+//         background-color: @sider-bg-color;
+//         .ant-menu{
+//           background-color: @sider-bg-color;
+//           color: rgba(255, 255, 255, 0.7);
+//           &-submenu{
+//             background-color: @sider-lighten-bg-color;
+//           }
+//           &-item{
+//             &:hover{
+//               color: @white;
+//               background-color: @sider-lighten-bg-color;
+//             }
+//             &-active{
+//               color: @theme-color;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.@{prefix-cls} {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,55 @@
+@prefix-cls: ~'@{namespace}-layout-sider';
+@logo-prefix-cls: ~'@{namespace}-app-logo';
+@menu-prefix-cls: ~'@{namespace}-layout-menu';
+
+.@{prefix-cls} {
+  background-color: @sider-bg-color;
+  .@{logo-prefix-cls} {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img{
+      width: @logo-width;
+      height: @logo-width;
+    }
+  }
+  .@{menu-prefix-cls}{
+    .ant-menu{
+      background-color: @sider-bg-color;
+      ul{
+        background-color: @sider-lighten-bg-color;
+      }
+    }
+    .app-iconify{
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+  &-dark{
+    .ant-menu{
+      // background-color: @sider-dark-bg-color ;
+      .ant-menu-inline.ant-menu-sub{
+        // background-color: @sider-lighten-bg-color;
+      }
+    }
+    .@{logo-prefix-cls} {
+      &__title{
+        color: @white !important;
+      }
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .@{prefix-cls}{
+    // background-color: @sider-bg-color;
+    .ant-menu{
+      // background-color: @sider-dark-bg-color ;
+      .ant-menu-inline.ant-menu-sub{
+        // background-color: @sider-lighten-bg-color;
+      }
+    }
+  }
+}
