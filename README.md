@@ -1,5 +1,5 @@
 ## Vite + Vue3 + Vue-router + Pinia 后台管理系统框架【参考vue-vben-admin】
-[github项目地址](https://github.com/zhang-love/vue-zl-admin)
+[文档地址](https://blog.csdn.net/qq_38862234/article/details/125875300)
 核心功能：
 
  - 实现了vben里面的核心功能，包括登录注册、日夜间模式切换、后台主题色菜单背景色切换、国际化、状态管理、请求管理、路由管理、缓存持久化，响应式布局
